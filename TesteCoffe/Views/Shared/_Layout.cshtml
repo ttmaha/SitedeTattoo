@@ -1,0 +1,111 @@
+﻿<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Estúdio De Tatuagem</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="/css/Index.css" asp-append-version="true" />
+  
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tattoo - Eduardo B.</title>
+    <link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/js/site.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+</head>
+
+<body style="background: url('/img/fundo.jpg');">
+
+
+
+    <nav class="navbar navbar-dark navbar-expand-lg bg-transparent py-lg-4" id="menubar">
+        <div  class="container">
+            
+           @* <a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#">Menu</a>*@
+            
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarResponsive">
+            
+            
+            <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" >
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link w3-button w3-round-xlarge" asp-controller="Home" asp-action="Index">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link w3-button w3-round-xlarge" asp-controller="Home" asp-action="Produtos">Tattoos</a></li>
+                    <li class="nav-item"><a class="nav-link w3-button w3-round-xlarge" asp-controller="Home" asp-action="Loja">Horários</a></li>
+                    <li class="nav-item"><a class="nav-link w3-button w3-round-xlarge" asp-controller="Home" asp-action="About">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+            @RenderBody()
+  
+  
+
+
+       
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+
+
+    <div id="page-container">
+   <div id="content-wrap">
+     <!-- all other page content -->
+   </div>
+   <footer id="footer">&copy;Mahatmã Titton</footer>
+ </div>
+
+
+    </body>
+
+      
+       
+</html>
+
+                       
+<style>
+
+
+    body {
+        height: 100%;
+        margin: 0;
+    }
+    html {
+        padding-bottom: 50px;
+        min-height: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        position: relative;
+    }
+
+    #content-wrap {
+      padding-bottom: 2.5rem;    /* Footer height */
+    }
+
+    #footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0px;}
+
+</style>

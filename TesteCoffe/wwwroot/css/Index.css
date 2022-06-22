@@ -1,0 +1,201 @@
+﻿body {
+}
+
+
+
+
+
+.bg_video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width:100%;
+    min-height:100%;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+   
+    background-size: cover;
+    border-radius: 20%;
+}
+
+img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#eDu {
+    border-radius: 20%;
+
+}
+
+
+.quadro {
+    position: relative;
+    animation-duration: 3s;
+    animation-name: opacity1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+
+
+
+@media(min-width: 480px) {
+
+
+
+    
+
+    .quadro .intro-text {
+        left: 0;
+        width: 60%;
+        margin-top: 0rem;
+        position: absolute;
+        
+    }
+
+        .quadro .intro-text .intro-button {
+            width: 100%;
+            left: 0;
+            position: absolute;
+            bottom: -1rem;
+            
+        }
+}
+
+@media(min-width: 1280px) {
+    .quadro .intro-text {
+        width: 30%
+    }
+    
+}
+
+
+
+
+#subir {
+    color: black;
+    position: fixed;
+    margin-left: 80px;
+    scroll-behavior: smooth;
+}
+
+
+
+#menubar {
+    background-color: rgba(47,23,15);
+    font-family: "Fantasy";
+    
+        
+}
+
+    #menubar .navbar-brand {
+        
+    }
+
+    #menubar .navbar-nav .nav-item .nav-link {
+        color: rgba(255,255,255,.9);
+        font-weight: 900;
+        text-transform: uppercase
+    }
+
+    #menubar .navbar-nav .nav-item.active .nav-link {
+        color: #e6a756; 
+        
+    }
+
+@media(min-width: 992px) {
+    #menubar .navbar-nav .nav-item {
+        padding-left: 6.5rem;
+        padding-right: 6.5rem;
+        
+    }
+
+        #menubar .navbar-nav .nav-item .nav-link {
+            font-size: 1.3rem
+
+        }
+
+            #menubar .navbar-nav .nav-item .nav-link:hover {
+                color: rgba(255,255,255,.1)
+            }
+
+        #menubar .navbar-nav .nav-item.active .nav-link:hover {
+            color: #e6a756
+        }
+}
+
+
+.topHeader {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+    color: white;
+    animation-duration: 2s;
+    animation-name: opacity;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-family: "Franklin Gothic";
+    text-shadow: 4px 4px #ff0000;
+}
+
+
+
+@keyframes opacity{
+    from {
+        opacity: 1;
+        color: rgba(255,255,255);
+    }
+    to {
+        opacity: 0;
+        color: rgba(0,255,0);
+    }
+}
+
+@keyframes opacity1 {
+    from {
+        opacity: 1;
+        margin-left: 10px;
+        
+    }
+
+    to {
+        opacity: 0.8;
+        margin-left: 00px;
+       
+    }
+}
+
+
+
+
+
+.ctb {
+    padding-top: 00rem;
+    padding-bottom: 2rem;
+    
+}
+
+    .ctb .cta-inner {
+        position: relative;
+        padding: 3rem;
+        margin: .5rem;
+        background-color: rgba(255,255,255,.85)
+    }
+
+        .ctb .cta-inner:before {
+            border-radius: .5rem;
+            content: "";
+            position: absolute;
+            top: -0.5rem;
+            bottom: -0.5rem;
+            left: -0.5rem;
+            right: -0.5rem;
+            border: .25rem solid rgba(255,255,255,.85);
+            pointer-events: none
+        }
+
+
+
